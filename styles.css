@@ -1,0 +1,46 @@
+.box {
+  background-color: red;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  text-align: center;
+  color: white;
+  animation: box 5s infinite;
+}
+@keyframes box {
+  0% {top: 0px; left: 0px; background-color: red;
+  border-radius: 0%;}
+  25% {top: 200px; left: 0px; background-color: green;
+  border-radius: 25%;}
+  50% {top: 200px; left: 200px; background-color: yellow;
+  border-radius: 50%;}
+  75% {top: 0px; left: 200px; background-color: blue;
+  border-radius: 25%;}
+  100% {top: 0px; left: 0px; background-color: red;
+  border-radius: 0%;}
+}
+p {
+  margin: 0;
+  
+}
+.child {
+  background-color: black;
+  width: 150px;
+  height: 160px;
+  margin: auto;
+  animation: child 5s infinite;
+}
+@keyframes child {
+  0% {border-radius: 0%;}
+  25% {border-radius: 15%;}
+  50% {border-radius: 0%;}
+  75% {border-radius: 15%;}
+  100% {border-radius: 0%;}
+}
+
+img {
+  width: 100%;
+  max-width: 100px;
+  height: 160px;
+  object-fit: cover;
+}
